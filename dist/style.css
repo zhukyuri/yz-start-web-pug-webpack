@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.post {
+  position: relative;
+  width: 100%;
+  max-width: 870px;
+  padding: 6px 24px 0;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.05); }
+  .post:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -2px;
+    left: -2px;
+    height: 6px;
+    background-color: #81af4d; }
+  .post-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 18px 0 23px 2px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+    text-align: center; }
+    @media screen and (min-width: 640px) {
+      .post-header {
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        text-align: left; } }
+  .post-data {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 0; }
+    @media screen and (min-width: 640px) {
+      .post-data {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    .post-data-wrapper {
+      width: 100%;
+      min-width: 0;
+      padding: 12px; }
+      @media screen and (min-width: 640px) {
+        .post-data-wrapper {
+          width: auto; } }
+  .post-author-image {
+    -ms-flex: 0 0 116px;
+        flex: 0 0 116px;
+    width: 116px;
+    height: 116px;
+    margin-right: 16px;
+    padding: 6px;
+    border-radius: 50%;
+    background: linear-gradient(#f1f1f1, #d8d8d8);
+    overflow: hidden; }
+    .post-author-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 50%; }
+  .post-date {
+    padding: 16px 6px 0 0;
+    text-align: center;
+    color: #81af4d; }
+    .post-date svg {
+      margin-right: 6px;
+      fill: #81af4d; }
+    .post-date span {
+      vertical-align: middle; }
+  .post-content {
+    padding: 20px 10px 15px; }
+  .post-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 17px 0 32px;
+    border-top: 1px solid #efefef; }
+    @media screen and (min-width: 640px) {
+      .post-footer {
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        margin: 0 3px 0 9px; } }
+  .post-read-more {
+    display: inline-block;
+    width: 280px;
+    height: 48px;
+    line-height: 48px;
+    margin: 1px 0;
+    border: 1px solid #6e8e49;
+    border-radius: 2px;
+    transition: background 0.1s;
+    color: #ffffff;
+    background: #81af4d;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.07em; }
+    .post-read-more:hover {
+      background: #6e8e49;
+      text-decoration: none; }
+  .post-social {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    height: 38px;
+    margin-top: 24px;
+    text-align: center; }
+    @media screen and (min-width: 640px) {
+      .post-social {
+        width: auto;
+        margin-top: 0; } }
+    .post-social span {
+      display: none;
+      color: #d8d8d8; }
+      @media screen and (min-width: 640px) {
+        .post-social span {
+          display: block; } }
+  .post-share {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: border 0.1s; }
+    .post-share:hover {
+      border: 2px solid rgba(255, 255, 255, 0.5); }
+    @media screen and (min-width: 640px) {
+      .post-share {
+        margin-left: 16px; } }
+    .post-share svg {
+      width: 20px;
+      height: 20px;
+      fill: #ffffff; }
+    .post-share-facebook {
+      background: #4460a1; }
+    .post-share-twitter {
+      background: #00a9ed; }
+    .post-share-google {
+      background: #f8402e; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  min-width: 320px;
+  background: #f1f1f1;
+  font-family: Arial, sans-serif;
+  font-size: 16px; }
+
+main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 12px; }
+
+h2,
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2; }
+
+h3 {
+  margin-bottom: 25px; }
+
+a {
+  color: #81af4d;
+  text-decoration: none;
+  word-wrap: break-word; }
+  a:hover {
+    text-decoration: underline; }
+
+p {
+  margin: 24px 0;
+  line-height: 1.5; }
+
+svg {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle; }
